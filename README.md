@@ -30,9 +30,9 @@ Terraform configuration that creates Azure Storage Account
      ```az account set --subscription="<your_subscription_id>"```
 - Now you can create Azure AD Service principal (if you don't already have on):
    - To create your Azure AD Service principal, run the following command:
-     ```
+   ```
      az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/<your_subscription_id>"
-     ```
+   ```
    - After running the previous line, the following will be returned:
    ```
       appId
@@ -43,12 +43,12 @@ Terraform configuration that creates Azure Storage Account
      - Make note of ```appId```
 
 - Configure Terraform environment variables:
-```
-export ARM_SUBSCRIPTIONID=<your_subscription_id>
-export ARM_CLIENT_ID=<your_appId>
-export ARM_CLIENT_SECRET=<your_password>
-export ARM_TENANT_ID=<your_tenant_id>
-```
+   ```
+   export ARM_SUBSCRIPTIONID=<your_subscription_id>
+   export ARM_CLIENT_ID=<your_appId>
+   export ARM_CLIENT_SECRET=<your_password>
+   export ARM_TENANT_ID=<your_tenant_id>
+   ```
 **What the terraform configuration in the repo is goint to do**
 
 - The terraform configuration in this repository will:
