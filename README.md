@@ -4,6 +4,9 @@ Terraform configuration that creates Azure Storage Account
 
 
 **TO-DO**
+- Add outputs for:
+   - test_resource_group's name
+   - asa_test's name
 - Prepare thorough README
 
 **DONE**
